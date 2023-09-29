@@ -41,7 +41,14 @@ def menu():
 
 
 def leerNum(mensaje):
-    pass
+    while True:
+        try:
+            num = float(input(mensaje))
+            return num
+        
+        except ValueError:
+            print("Error: Número inválido.")
+            input("Presione cualquier tecla para continuar...")
 
 
 # PROGRAMA PRINCIPAL
@@ -52,14 +59,34 @@ while True:
         print("\n\n1. Sumar")
         num1 = leerNum("Ingrese el primer número: ")
         num2 = leerNum("Ingrese el segundo número: ")
+        print(f"El resultado de la suma es: {suma(num1, num2):.3f}")
+
     elif opcionUsuario == 2:
-        pass
+        print("\n\n1. Restar")
+        num1 = leerNum("Ingrese el primer número: ")
+        num2 = leerNum("Ingrese el segundo número: ")
+        print(f"El resultado de la suma es: {resta(num1, num2):.3f}")
+
     elif opcionUsuario == 3:
-        pass
+        print("\n\n1. Multiplicar")
+        num1 = leerNum("Ingrese el primer número: ")
+        num2 = leerNum("Ingrese el segundo número: ")
+        print(f"El resultado de la suma es: {multiplicacion(num1, num2):.3f}")
+        
     elif opcionUsuario == 4:
-        pass
+        print("\n\n1. Dividir")
+        num1 = leerNum("Ingrese el primer número: ")
+        num2 = leerNum("Ingrese el segundo número: ")
+        resultado = division(num1, num2)
+
+        if resultado != None:
+            print(f"El resultado de la división es: {division(num1, num2):.3f}")
+        else:
+            print("División entre cero es indeterminada.")
+        
     elif opcionUsuario == 5:
         print("\n\nGracias por usar la calculadora")
         print("Adios")
         input() # Espera una entrada de usuario cualquiera.
         break
+    input("Presione cualquier tecla para volver al MENU...")
