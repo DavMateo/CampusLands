@@ -9,6 +9,7 @@ def leerInt(mensaje):
 
             if numero < 1:
                 print("Valor inválido. Debe ser mayor a cero.")
+                continue
             return numero
         
         except ValueError:
@@ -22,6 +23,7 @@ def leerNombre(nombreUsuario):
 
             if len(nombre) == 0 or not nombre.isalnum():
                 print("Nombre inválido")
+                continue
             return nombre
         
         except Exception as e:
@@ -34,6 +36,7 @@ def leerEstrato(estratoUsuario):
 
             if estrato < 1 or estrato > 5:
                 print("Estrato inválido. Ingrese del 1 al 5")
+                continue
             return estrato
         
         except ValueError:
