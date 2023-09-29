@@ -29,11 +29,13 @@ def menu():
 
             if opcion < 1 or opcion > 5:
                 print("Opción no válida. Escoja de 1 a 5.")
+                input("Presione cualquier tecla para continuar...")
                 continue
             break
 
         except ValueError:
             print("Opción no válida. Escoja de 1 a 5.")
+            input("Presione cualquier tecla para continuar...")
 
     return opcion
 
@@ -50,3 +52,14 @@ while True:
         print("\n\n1. Sumar")
         num1 = leerNum("Ingrese el primer número: ")
         num2 = leerNum("Ingrese el segundo número: ")
+    elif opcionUsuario == 2:
+        pass
+    elif opcionUsuario == 3:
+        pass
+    elif opcionUsuario == 4:
+        pass
+    elif opcionUsuario == 5:
+        print("\n\nGracias por usar la calculadora")
+        print("Adios")
+        input() # Espera una entrada de usuario cualquiera.
+        break
