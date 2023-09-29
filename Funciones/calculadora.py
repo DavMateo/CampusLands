@@ -36,3 +36,17 @@ def menu():
             print("Opción no válida. Escoja de 1 a 5.")
 
     return opcion
+
+
+def leerNum(mensaje):
+    pass
+
+
+# PROGRAMA PRINCIPAL
+while True:
+    opcionUsuario = menu()
+
+    if opcionUsuario == 1:
+        print("\n\n1. Sumar")
+        num1 = leerNum("Ingrese el primer número: ")
+        num2 = leerNum("Ingrese el segundo número: ")
