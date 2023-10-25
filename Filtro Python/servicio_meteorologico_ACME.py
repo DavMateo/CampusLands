@@ -510,7 +510,7 @@ def listarDatosObservatorios(msj, dictObservatorios):
 while isVerdadero:
     while inicializandoSistema:
         rutaFile = "Filtro Python/data.json"
-        rutaCsv = "Filtro Python/datos.csv"
+        rutaCsv = "Filtro Python/infoClima.csv"
 
         csvObservatorio = recibirInformacion(rutaCsv, rutaFile)
         dictObservatorios = inicializarPrograma(rutaFile, csvObservatorio)
